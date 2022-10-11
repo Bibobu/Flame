@@ -13,7 +13,10 @@ pub fn atom_parser(s: &str) -> IResult<&str, Vec<&str>> {
 // Should split the file at the first body keyword encountered
 // TODO: add more keywords when POC works
 pub fn header_parser(data_content: &str) -> IResult<&str, &str> {
-    alt((
-        tag("Atoms"),
-    ))(data_content)
+    // alt((
+    //     tag("Masses"),
+    //     tag("Atoms"),
+    //     tag("Velocities"),
+    // ))(data_content)
+    tag("Masses")(data_content)
 }
