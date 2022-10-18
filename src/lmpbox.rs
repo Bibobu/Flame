@@ -2,13 +2,13 @@
 
 #[derive(Default, Debug)]
 pub struct Lmpbox {
-    xlo: f64,
-    xhi: f64,
-    ylo: f64,
-    yhi: f64,
-    zlo: f64,
-    zhi: f64,
-    xy: f64,
-    xz: f64,
-    yz: f64,
+    pub xlo: f64,
+    pub xhi: f64,
+    pub ylo: f64,
+    pub yhi: f64,
+    pub zlo: f64,
+    pub zhi: f64,
+    pub xy: f64,
+    pub xz: f64,
+    pub yz: f64,
 }
